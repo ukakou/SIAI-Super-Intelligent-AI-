@@ -63,7 +63,7 @@
             
             <form id="user-input">
                 
-				<p>Enter a number:</p> <input type="text" id="number-input">
+				<p>Enter a number or several:</p> <input type="text" id="number-input">
 				
             </form>
 			
@@ -79,15 +79,15 @@
 			writer.addEventListener("keypress", function(event){
 				
 				if(event.keyCode == 13){
-				var userKeys = "" + String.fromCharCode(event.charCode);
-				}
-				console.log(userKeys);
-			})
+					var userKeys = "" + String.fromCharCode(event.charCode);
+					}
+					console.log(userKeys);
+					})
 			
 			document.getElementById("user-writes").onclick = function(){
 				alert("Interesting");
 				console.log("Interesting more");
-			}
+				}
 			
 		</script>
         
