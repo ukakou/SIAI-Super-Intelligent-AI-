@@ -1,0 +1,97 @@
+<html>
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    
+    <head>
+      
+        <title>SAIA (Super Intelligent AI)</title>
+        
+        <style type="text/css">
+            
+            body{
+                
+                font-family: helvetica, 'Bree Serif', serif;
+                font-size: 1.5em;
+                
+            }
+            
+            #overhead{
+                margin: 0 auto;
+                width: 600px;
+                text-align: center;
+            }
+        
+            #first-function-box{
+                background-color:#E55126;
+                width: 600px;
+                padding:10px;
+                margin: 0 auto;
+            }
+            
+            #saia-skill-1 {
+                color:white;
+                font-size:20px;
+                font-weight:bolder;
+                text-align: center;
+            }
+            
+            #user-input{
+                font-size: 20px;
+                text-align: center;
+            }
+            
+            #number-input{
+                
+            }
+        
+        
+        </style>
+        
+    </head>
+    
+    <body>
+        
+        <div id="overhead">
+            
+            <h1>SIAI (Super Intelligent AI)</h1>
+            <h2>Welcome to SAIA Homepage!</h2>
+            
+        </div>
+        
+        <div id="first-function-box">
+            
+            <p id ="saia-skill-1">Your favorite AI can identify any prime number you type. <br>Go ahead give it a try below! </p>
+            
+            <form id="user-input">
+                
+				<p>Enter a number:</p> <input type="text" id="number-input">
+				
+            </form>
+			
+			<button id="user-writes">See What You Typed</button>
+			
+			<p id="user-wrote"></p>
+            
+        </div>  
+		
+		<script type="text/javascript">
+			
+			var writer = document.querySelector("#number-input");
+			writer.addEventListener("keypress", function(event){
+				
+				if(event.keyCode == 13){
+				var userKeys = "" + String.fromCharCode(event.charCode);
+				}
+				console.log(userKeys);
+			})
+			
+			document.getElementById("user-writes").onclick = function(){
+				alert("Interesting");
+				console.log("Interesting more");
+			}
+			
+		</script>
+        
+    </body>
+
+
+<html>
